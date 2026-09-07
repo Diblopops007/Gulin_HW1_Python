@@ -1,0 +1,69 @@
+lst = [ '🍇', '🍑', '🍐', '🍊', '🍌', '🍎']
+
+print (lst[0] , lst[5])
+
+
+
+def is_year_leap(year):
+    return "True" if year % 4 == 0 else "False"
+
+year = int(input("Введите год: "))
+result = is_year_leap(year)
+print (f"год {year}: {result}")
+
+
+import math
+
+def square(x):
+    return math.ceil(x * x)
+
+side_square = int(input("Введите сторону квадрата: "))
+print(f"Площадь квадрата: {square(side_square)}")
+
+
+
+
+n = int(input("Введите число:"))
+
+def fizz_buzz(n):
+    for i in range(1, n + 1):
+        if i % 3 == 0 and i % 5 == 0:
+            print("FizzBuzz")
+        elif i % 3 == 0:
+            print("Fizz")
+        elif i % 5 == 0:
+            print("Buzz")
+        else:
+            print(i)    
+fizz_buzz(n)    
+
+
+
+def month_to_season(month):
+    if 1 <= month <= 2:
+        return "Зима"
+    if month == 12:
+        return "Зима"
+    if 3 <= month <= 5:
+        return "Весна"
+    if 6 <= month <= 8:
+        return "Лето"
+    if 9 <= month <= 11:
+        return "Осень"
+    return "Неверный номер месяца"
+month=int(input("Введите номер месяца (1-12): "))
+print(month_to_season(month))
+
+
+
+lst = [17, 34, 9, 21, 13, 48, 24, 7, 81, 29, 16, 12, 42]
+result=[x for x in lst if x < 30 and x % 3 == 0]
+print(result)
+
+
+
+my_list = list(range(18, 1, -4))
+
+print(my_list)
+
+
