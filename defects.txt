@@ -1,0 +1,13 @@
+
+BUG-001. trim() не обрабатывает None
+--------------------------------------------------------------
+Функция:      StringUtils.trim
+Серьёзность:  Minor
+Приоритет:    Medium
+Тип:          Обработка ошибок
+
+Шаги:
+  1. StringUtils().trim(None)
+
+Фактический результат:
+  AttributeError: 'NoneType' object has no attribute 'startswith'
