@@ -1,12 +1,8 @@
-# Lesson 10 — Allure + Selenium Pytest
+# Lesson 10 — Allure Pytest
 
 Проект содержит UI-тесты на Selenium с интеграцией **Allure** для
 формирования наглядных отчётов.
 
-## Требования
-
-- Python 3.10+
-- Google Chrome / Mozilla Firefox
 
 
 ## Запуск тестов и формирование отчёта
